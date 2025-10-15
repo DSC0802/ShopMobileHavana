@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="screenGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#66d9ff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.95"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="30%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="18" stdDeviation="30" flood-color="#0b1324" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="100%" height="100%" fill="#f8fafc" />
+
+  <!-- left phone (slanted) -->
+  <g transform="translate(220,120) rotate(-12 200 380)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="220" height="460" rx="34" fill="#0f172a" />
+    <rect x="12" y="28" width="196" height="404" rx="20" fill="url(#screenGrad)" />
+    <!-- small camera -->
+    <circle cx="188" cy="44" r="6" fill="#0b1220" opacity="0.8" />
+    <!-- reflection -->
+    <rect x="16" y="36" width="120" height="80" rx="12" fill="url(#shine)" opacity="0.12" />
+  </g>
+
+  <!-- center phone (main) -->
+  <g transform="translate(420,80)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="320" height="640" rx="44" fill="#ffffff" stroke="#e6edf3" stroke-width="4" />
+    <rect x="16" y="36" width="288" height="568" rx="30" fill="url(#screenGrad)" />
+    <!-- notch / camera area -->
+    <circle cx="260" cy="56" r="6" fill="#0b1220" opacity="0.9" />
+    <circle cx="216" cy="56" r="3" fill="#0b1220" opacity="0.6" />
+    <!-- bottom home indicator -->
+    <rect x="116" y="604" width="88" height="8" rx="4" fill="#ffffff" opacity="0.18" />
+    <!-- screen content blocks -->
+    <rect x="36" y="96" width="236" height="36" rx="8" fill="#ffffff" opacity="0.12" />
+    <rect x="36" y="148" width="236" height="220" rx="12" fill="#ffffff" opacity="0.06" />
+    <rect x="36" y="384" width="100" height="100" rx="12" fill="#ffffff" opacity="0.08" />
+  </g>
+
+  <!-- right phone (slightly behind) -->
+  <g transform="translate(760,160) rotate(8 160 320)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="240" height="480" rx="36" fill="#111827" />
+    <rect x="12" y="22" width="216" height="436" rx="24" fill="url(#screenGrad)" />
+    <rect x="20" y="34" width="180" height="88" rx="10" fill="url(#shine)" opacity="0.14" />
+  </g>
+
+  <!-- subtle ground shadow -->
+  <ellipse cx="600" cy="730" rx="320" ry="36" fill="#0b1224" opacity="0.06" />
+
+  <!-- label -->
+  <text x="60" y="60" font-family="Inter, Arial, sans-serif" font-size="20" fill="#64748b">Mobile Store — Featured products</text>
+  
+</svg>
