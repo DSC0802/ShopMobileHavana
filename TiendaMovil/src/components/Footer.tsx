@@ -110,10 +110,6 @@ const Footer: FC = () => {
             &copy; {currentYear} T`Mobile<span className="text-blue-400">Havana</span>.
             All rights reserved.
           </p>
-          <p className="text-slate-400 text-sm flex items-center">
-            Made with <Heart size={14} className="mx-1 text-red-500" /> and
-            Swift
-          </p>
         </div>
       </div>
     </footer>
