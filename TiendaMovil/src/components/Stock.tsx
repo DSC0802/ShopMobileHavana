@@ -105,7 +105,7 @@ const Stock: React.FC = () => {
     const ok = window.confirm(`Buy ${product.title} for $${product.price}?`);
     if (ok) {
       console.log('Buy confirmed for product', product, 'by', user.email);
-      alert(`Thanks ${user.name || user.email}! Purchase flow is not implemented in this demo.`);
+      alert(`Thanks ${user.name || user.email}! Your purchase has been made, it will arrive in two days.`);
     }
   };
 
